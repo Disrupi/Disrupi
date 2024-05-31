@@ -1,0 +1,12 @@
+#================================================
+#   OS
+#   Start-OSDCloud with Params
+#================================================
+$Params = @{
+    OSBuild = "22H1"
+    OSEdition = "Enterprise"
+    OSLanguage = "en-us"
+    SkipAutopilot = $true
+    UpdateFirmware = $true
+}
+Start-OSDCloud @Params
