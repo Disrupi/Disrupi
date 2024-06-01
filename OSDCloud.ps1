@@ -15,4 +15,4 @@ $Params = @{
 }
 Start-OSDCloud @Params
 
-wpeutil reboot
+#wpeutil reboot
