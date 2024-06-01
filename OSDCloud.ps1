@@ -7,8 +7,12 @@ Install-Module OSD -Force -Skippublishercheck
 $Global:MyOSDCloud = @{
     DriverPackName = 'none'
     #ApplyManufacturerDrivers = $false
-    ApplyCatalogDrivers = $true
-    ApplyCatalogFirmware = $true
+    #ApplyCatalogDrivers = $true
+    #ApplyCatalogFirmware = $true
+    MSCatalogDiskDrivers = $true
+    MSCatalogNetDrivers = $true
+    MSCatalogScsiDrivers = $true
+    MSCatalogFirmware = $true
 }
 
 
