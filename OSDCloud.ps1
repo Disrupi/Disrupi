@@ -2,6 +2,7 @@ cls
 Write-Host  -ForegroundColor Yellow "Loading OSDCloud..."
 
 Install-Module OSD -Force -Skippublishercheck
+Install-Module MSCatalog -Force -Skippublishercheck
 
 
 $Global:MyOSDCloud = @{
