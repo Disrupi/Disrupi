@@ -7,7 +7,7 @@ $Params = @{
     OSVersion = "Windows 10"
     OSBuild = "22H2"
     OSEdition = "Pro"
-    OSLanguage = "de-de"
+    OSLanguage = "en-US"
     ZTI = $true
     Firmware = $true
 }
