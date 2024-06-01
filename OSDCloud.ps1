@@ -22,6 +22,4 @@ $Params = @{
     Firmware = $true
 }
 Start-OSDCloud @Params
-start-sleep -seconds 300
 #wpeutil reboot
-ä
