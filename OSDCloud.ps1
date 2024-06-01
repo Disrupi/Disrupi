@@ -5,16 +5,16 @@ Install-Module OSD -Force -Skippublishercheck
 Install-Module MSCatalog -Force -Skippublishercheck
 
 
-$Global:MyOSDCloud = @{
-    DriverPackName = 'none'
+#$Global:MyOSDCloud = @{
+    #DriverPackName = 'none'
     #ApplyManufacturerDrivers = $false
     #ApplyCatalogDrivers = $true
     #ApplyCatalogFirmware = $true
-    MSCatalogDiskDrivers = $true
-    MSCatalogNetDrivers = $true
-    MSCatalogScsiDrivers = $true
-    MSCatalogFirmware = $true
-}
+    #MSCatalogDiskDrivers = $true
+    #MSCatalogNetDrivers = $true
+    #MSCatalogScsiDrivers = $true
+    #MSCatalogFirmware = $true
+#}
 
 
 
@@ -27,4 +27,4 @@ $Params = @{
     Firmware = $true
 }
 Start-OSDCloud @Params
-#wpeutil reboot
+wpeutil reboot
