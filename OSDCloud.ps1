@@ -21,7 +21,7 @@ Install-Module MSCatalog -Force -Skippublishercheck
 $Params = @{
     OSVersion = "Windows 11"
     OSBuild = "22H2"
-    OSEdition = "Pro"
+    OSEdition = "Enterprise"
     #OSLanguage = "en-US"
     ZTI = $true
     Firmware = $true
