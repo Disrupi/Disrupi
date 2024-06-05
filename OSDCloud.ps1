@@ -1,5 +1,5 @@
 Write-Host  -ForegroundColor Yellow "Loading OSDCloud..."
-start-sleep -seconds 10
+start-sleep -seconds 5
 
 Install-Module OSD -Force -Skippublishercheck
 Install-Module MSCatalog -Force -Skippublishercheck
