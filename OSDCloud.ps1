@@ -1,4 +1,3 @@
-cls
 Write-Host  -ForegroundColor Yellow "Loading OSDCloud..."
 
 Install-Module OSD -Force -Skippublishercheck
