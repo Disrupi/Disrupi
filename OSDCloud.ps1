@@ -24,7 +24,7 @@ $Params = @{
     OSEdition = "Enterprise"
     OSLanguage = "de-de"
     ZTI = $true
-    Firmware = $true
+    Firmware = $false
 }
 Start-OSDCloud @Params
 wpeutil reboot
