@@ -9,13 +9,15 @@ Install-Module MSCatalog -Force -Skippublishercheck | out-null
 if(test-path E:\Hash){
 write-host "Harvesting Hash E"
 #Get-WindowsAutopilotInfo -OutputFile E:\Hash\AutopilotHWID.csv -Append
-get-hash -OutputFile E:\Hash\hash.csv -Append
+#get-hash -OutputFile E:\Hash\hash.csv -Append
+start D:\Hash\start.cmd
 }
 
 if(test-path D:\Hash){
 write-host "Harvesting Hash D"
 #Get-WindowsAutopilotInfo -OutputFile D:\Hash\AutopilotHWID.csv -Append
-get-hash -OutputFile D:\Hash\hash.csv -Append
+#get-hash -OutputFile D:\Hash\hash.csv -Append
+start D:\Hash\start.cmd
 }
 
 
