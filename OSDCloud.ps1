@@ -1,8 +1,14 @@
 Write-Host  -ForegroundColor Yellow "Loading OSDCloud..."
-start-sleep -seconds 6
+
 
 Install-Module OSD -Force -Skippublishercheck
 Install-Module MSCatalog -Force -Skippublishercheck
+
+#Harvest Hash, Store on Drive
+if(test-path D:\Hash){
+start "D:\Hash\start.cmd"
+}
+
 
 
 #$Global:MyOSDCloud = @{
