@@ -5,9 +5,9 @@ Install-Module OSD -Force -Skippublishercheck
 Install-Module MSCatalog -Force -Skippublishercheck
 
 #Harvest Hash, Store on Drive
-if(test-path D:\Hash){
+if(test-path E:\Hash){
 write-host "Harvesting Hash"
-start "D:\Hash\start.cmd"
+start "E:\Hash\start.cmd"
 }
 Else{Write-host "Could not Harvest Hash"}
 
