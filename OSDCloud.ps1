@@ -1,16 +1,18 @@
 Write-Host  -ForegroundColor Yellow "Loading OSDCloud..."
 
 
-Install-Module OSD -Force -Skippublishercheck
-Install-Module MSCatalog -Force -Skippublishercheck
+Install-Module OSD -Force -Skippublishercheck | out-null
+Install-Module MSCatalog -Force -Skippublishercheck | out-null
+
+Install-Script -Name Get-WindowsAutopilotInfo
 
 #Harvest Hash, Store on Drive
 if(test-path E:\Hash){
 write-host "Harvesting Hash E"
-start E:\Hash\Start.cmd
+Get-WindowsAutopilotInfo -OutputFile E:\Hash\AutopilotHWID.csv -Append
 }Else{
 write-host "Harvesting Hash D"
-start D:\Hash\Start.cmd
+Get-WindowsAutopilotInfo -OutputFile D:\Hash\AutopilotHWID.csv -Append
 }
 
 
