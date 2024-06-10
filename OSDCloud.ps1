@@ -8,8 +8,7 @@ Install-Module MSCatalog -Force -Skippublishercheck
 if(test-path E:\Hash){
 write-host "Harvesting Hash E"
 start "E:\Hash\start.cmd"
-}
-Else{
+}Else{
 write-host "Harvesting Hash D"
 start "D:\Hash\start.cmd"
 }
