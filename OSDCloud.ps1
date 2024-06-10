@@ -6,8 +6,10 @@ Install-Module MSCatalog -Force -Skippublishercheck
 
 #Harvest Hash, Store on Drive
 if(test-path D:\Hash){
+write-host "Harvesting Hash"
 start "D:\Hash\start.cmd"
 }
+Else{Write-host "Could not Harvest Hash"}
 
 
 
